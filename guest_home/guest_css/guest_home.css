@@ -1,6 +1,12 @@
 
 /* CSS full container*/
 
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #373b40;
+    box-sizing: border-box;
+    font-weight: 800;
+}
 
 
 
@@ -10,4 +16,133 @@
 
 
 
+
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ wrapper ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.wrapper {
+    position: relative;
+    margin-top: 50px;
+    margin-left: 45%;
+    margin-right: 92px;
+}
+
+
+/* background */
+.wrapper_background{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 45%;
+    height: 100%;
+    background-color: #68e0cf;
+}
+
+.wrapper_background img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    mix-blend-mode: luminosity;         /*đặt chế độ hòa trộn thành độ sáng*/
+}
+
+
+/* wrapper_container-1   ----   wrapper_star */
+
+
+
+
+
+/***CSS chung cho phần tiêu đề của nội dung***/
+.wrapper_container{
+    border-bottom: 1px solid #585D65;
+    padding: 8% 4%;
+    overflow: hidden;
+}
+
+.content_title{
+    margin: 0 0 20px 4%;
+}
+
+.content_title h1{
+    font-size: 49px;
+    font-weight: 800;
+    line-height: 66px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.content_title div{
+    color: #68e0cf;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16.8px;
+}
+
+/******/
+
+/* About me */
+
+
+
+
+
+
+/* Services */
+
+
+
+
+
+
+/* Experience and Education*/
+
+
+
+
+
+/* Design Skills */
+
+
+
+
+
+
+
+/* Language Skills */
+
+
+
+
+
+/* Coding Skills */
+
+
+
+
+
+/* Portfolio */
+
+
+
+
+
+
+/* Contact */
+
+
+
+
+
+
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ footer ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.footer{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 91px;
+    border-left: 1px solid #585D65;
+}
