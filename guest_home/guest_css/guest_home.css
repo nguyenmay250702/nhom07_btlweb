@@ -9,6 +9,90 @@ body{
 }
 
 
+/* background_animations */
+
+@keyframes change_height{
+    0%{
+        height: var(--height_old);
+    }
+    100%{
+        height: var(--height_new);
+    }
+}
+
+.background_animations{
+    position: fixed;
+    z-index: 30;
+    height: 100%;
+    width: 100%;
+    background-color: #68e0cf;
+    --height_old: 100%;
+    --height_new: 0;
+    animation: change_height 0.8s ease-in 0.4s forwards;
+}
+
+/*  */
+.background{
+    position: fixed;
+    z-index: 30;
+    height: 100%;
+    background-color: #68e0cf;
+    animation: change_height 0.8s ease-in 0.4s forwards;
+}
+
+/*  */
+
+.background_animations div{
+    /* position: absolute; */
+    position: relative;
+    z-index: 31;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: #373b40;
+    --height_old: 100%;
+    --height_new: 0;
+    animation: change_height 0.4s ease-in 0.5s forwards;
+}
+
+.background_animations .col_1,
+.background_animations .col_3{
+    position: absolute;
+    z-index: 32;
+    width: 11px;
+    height: 30px;
+    margin-right: 40px;
+    background-color: #fff;
+    opacity: 60%;
+    --height_old: 10%;
+    --height_new: 0;
+    animation-direction: alternate;
+    animation: change_height 0.6s ease-in 0.09s forwards;
+}
+
+.background_animations .col_2{
+    position: absolute;
+    z-index: 32;
+    width: 10px;
+    height: 30px;
+    background-color: #68e0cf;
+    opacity: 60%;
+    /*  */
+    --height: 10%;
+    --height: 0;
+    /*  */
+    --height_old: 10%;
+    --height_new: 0;
+    animation-direction: alternate;
+    animation: change_height 0.9s ease-in 0.15s forwards;
+
+}
+
+.background_animations .col_3{
+    margin-left: 83px;
+}
 
 
 
@@ -205,8 +289,123 @@ body{
 }
 
 
-/* wrapper_container-1   ----   wrapper_star */
 
+
+/* wrapper_container-1   ----   wrapper_star */
+.wrapper_container_1{
+    border-bottom: 1px solid #585D65;
+    padding: 0 8% 16% 0;
+}
+
+.content_started{
+    position: relative;
+}
+
+.content_started h1{
+    width: 100%;
+    font-size: 4.2vw;
+    line-height: 1.2;
+    font-weight: 800;
+    padding: 9%;
+    margin: 29% 0 0 -25%;
+    border-radius: 264px;
+    color: #fff;
+    background-color: #373b40;
+    overflow: visible;
+}
+
+.content_started .content_started_list_1{
+    position: relative;
+    top: 16px;
+    margin-top: 2%;
+    max-width: 500px;
+    padding-left: 8%;
+}
+
+.content_started .content_started_list_1 span{
+    position: absolute;
+    top: -45px;
+    display: inline-block;
+    width: 130px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #68e0cf;
+    background-color: #373b40;
+    overflow: hidden;
+}
+
+.content_started .content_started_list_1 span:nth-child(1){
+    z-index: 1;
+    border-right: 1.6px solid #68e0cf;
+    --width_old: 0;
+    --width_new: 130px;
+    animation: change_width 2s ease-in-out infinite alternate;
+}
+
+.content_started .content_started_list_1 span:nth-child(2){
+    text-align: end;
+    background-color: #5e5c5c;
+}
+
+.content_started .content_started_list_1 .content_started_text{
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #fff;
+    margin-top: 6%;
+    text-align: left;
+}
+
+.content_started .content_started_list_1 .content_started_button{
+    margin-top: 11%;
+    display: flex;
+}
+
+.content_started .content_started_list_1 .content_started_button a{
+    font-size: 14px;
+    font-weight: 800;
+    text-decoration: none;
+    color: #fff;
+    margin-right: 7%;
+    border: 1px solid #585D65;
+    border-radius: 56px;
+}
+
+.content_started .content_started_list_1 .content_started_button a:first-child{
+    display: inline-block;
+    height: 56px;
+    width: 160px;
+    text-align: center;
+    line-height: 56px;
+}
+
+.content_started .content_started_list_1 .content_started_button a:first-child i{
+    margin-left: 4%;
+}
+
+.content_started .content_started_list_1 .content_started_button a:last-child{
+    display: inline-block;
+    height: 56px;
+    width: 56px;
+    position: relative;
+    line-height: 56px;
+    text-align: center;
+}
+
+.content_started .content_started_list_1 .content_started_button a:last-child i{
+    position: absolute;
+    top: 13px;
+    font-size: 19px;
+    right: calc(28px - 7px);
+    animation: change_top 0.6s linear infinite alternate;
+}
+
+
+.content_started .content_started_button a:hover{
+    color: #68e0cf;
+    border: 1px solid #68e0cf;
+}
 
 
 
