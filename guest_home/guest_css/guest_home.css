@@ -102,6 +102,89 @@ body{
 
 /* Design Skills */
 
+@keyframes DesignSkills_change_width{
+    0%{
+        width: var(--width_old);
+    }
+    100%{
+        width: var(--width_new);
+    }
+}
+
+.content_DesignSkills .content_text>div{
+    display: flex;
+}
+
+.content_DesignSkills .content_element{
+    width: 92%;
+    margin: 7% 4% 0 4%;
+}
+
+.content_DesignSkills .content_name{
+    margin-bottom: 26px;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 26px;
+    color: #fff;
+}
+
+.content_DesignSkills .content_explain{
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #fff; 
+}
+
+.content_DesignSkills .progress_90,
+.content_DesignSkills .progress_70,
+.content_DesignSkills .progress_55,
+.content_DesignSkills .progress_86{
+    position: relative;
+    height: 2px;
+    width: 100%;
+    margin-top: 30px;
+    background-color: #585d65;
+}
+
+.content_DesignSkills .percentage{
+    position: absolute;
+    height: 2px;
+    background-color: #68e0cf;
+}
+
+.content_DesignSkills .progress_90 .percentage{
+    --width_old: 6%;
+    --width_new: 90%;
+    animation: DesignSkills_change_width 3s ease-in 5 forwards;
+}
+
+.content_DesignSkills .progress_70 .percentage{
+    --width_old: 6%;
+    --width_new: 70%;
+    animation: DesignSkills_change_width 3s ease-in 5 forwards;
+}
+
+.content_DesignSkills .progress_55 .percentage{
+    --width_old: 6%;
+    --width_new: 65%;
+    animation: DesignSkills_change_width 3s ease-in 5 forwards;
+}
+
+.content_DesignSkills .progress_86 .percentage{
+    --width_old: 6%;
+    --width_new: 86%;
+    animation: DesignSkills_change_width 3s ease-in 5 forwards;
+}
+
+.content_DesignSkills .percentage span{
+    position: absolute;
+    top: -18px;
+    right: 0;
+    color: #68e0cf;
+    font-size: 12px;
+    font-weight: 600;
+}
+
 
 
 
