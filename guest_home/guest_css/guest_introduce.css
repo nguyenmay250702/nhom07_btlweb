@@ -1,1 +1,104 @@
 /* trang giới thiệu nhóm */
+.container_introduce,
+.container_contact,
+.container_footer {
+    display: flex;
+    justify-content: center;
+}
+
+.content{
+    width: 1036px;
+    padding: 40px;
+    margin: 6% 2% 0 2%;
+    box-shadow: 0px 2px 6px #575757;
+}
+
+.content h1{
+    margin-bottom: 4%;
+    font-size: 36px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #5e5d5d;
+}
+
+.container_introduce .content .content_information{
+    display: flex;
+}
+
+.container_introduce .content .content_information .avatar{
+    width: 50%;
+}
+
+.container_introduce .content .content_information .avatar img{
+    width: 100%;
+    height: 100%;
+}
+
+.container_introduce .content .content_information .basic_information{
+    width: 48%;
+    margin-left: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container_introduce .content .content_information .basic_information span{
+    color: #2f9b8c;
+    font-weight: 600;
+}
+
+.container_introduce .content .content_information .basic_information a{
+    display: inline-block;
+    padding: 2% 3%;
+    margin-top: 9%;
+    text-decoration: none;
+    color: #fff;
+    background-color: #929292;
+    border-radius: 9px;
+}
+
+.container_introduce .content .content_information .basic_information a:hover{
+    background-color: #68e0cf;
+    border: 1px solid #929292;
+}
+
+.container_introduce .content #phuong .basic_information div,
+.container_introduce .content #hoang .basic_information div{
+    --margin-left-old : 90px;
+    --margin-left-new : 0;
+    animation: change_margin_left 2s;
+
+}
+
+.container_introduce .content #may .basic_information{
+    margin: 0 2% 0 0;
+    text-align: end;
+}
+
+.container_introduce .content #may .basic_information div{
+    --margin-right-old: 90px;
+    --margin-right-new: 0;
+    animation: change_margin_right 2s;
+}
+
+@keyframes change_margin_left{
+    0%{
+        opacity: 0;
+        margin-left: var(--margin-left-old);
+    }
+    100%{
+        opacity: 1;
+        margin-left: var(--margin-left-new);
+    }
+}
+
+@keyframes change_margin_right{
+    0%{
+        opacity: 0;
+        margin-right: var(--margin-right-old);
+    }
+    100%{
+        opacity: 1;
+        margin-right: var(--margin-right-new);
+    }
+}
