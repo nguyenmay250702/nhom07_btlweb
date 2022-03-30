@@ -1,6 +1,12 @@
 
 /* CSS full container*/
 
+html{
+    /* hiệu ứng cuộn chuột mượt */
+    scroll-behavior: smooth;        
+}
+
+
 body{
     font-family: 'Poppins', sans-serif;
     background-color: #373b40;
@@ -510,8 +516,7 @@ body{
 
 
 
-
-/* Services */
+/* hobby */
 .content_hobby .content_text>div{
     display: flex;
 }
@@ -546,6 +551,117 @@ body{
 }
 
 
+
+
+/* Experience and Education*/
+
+.content_education,
+.content_experience{
+    position: relative;
+}
+
+.content_education .slidershow,
+.content_experience .slidershow{
+    position: relative;
+    overflow: hidden;
+    margin: 9% 4% 0 4%;
+}
+
+.content_education .content_slider,
+.content_experience .content_slider{
+    display: flex;
+    justify-content: space-between;
+    transition: transform 0.5s linear;
+}
+
+.content_education .slider,
+.content_experience .slider{
+    position: relative;
+    padding-right: 8%;
+    flex: 1 0 46%;
+    /* flex-grow: 1     thuộc tính phát triển linh hoạt, làm cho các mục có mức độ phát triển là như nhau và = 1 
+    flex-shrink: 0      thuộc tính uốn cong, chỉ định mức độ mà 1 mục sẽ co lại: ở đây không cho phép thu lại
+    flex-basis: chỉ định độ dài ban đầu của 1 mục
+    
+    ==> làm cho mục linh hoạt phát triển to nhất(1), không thể thu lại(0), và có chiều rộng ban đầu là 46% */
+}
+
+.content_education .date,
+.content_experience .date{
+    position: absolute;
+    left: -20px;
+    font-size: 10px;
+    font-weight: 400;
+    top: 23px;
+    transform: rotate(90deg);
+    color: #68e0cf;
+}
+
+.content_education .content_name,
+.content_experience .content_name{
+    margin-bottom: 26px;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 26px;
+    color: #fff;
+    margin-left: 10%;
+}
+
+.content_experience .content_explain,
+.content_education .content_explain{
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #fff; 
+}
+
+.content_experience .navs,
+.content_education .navs{
+    position: absolute;
+    display: inline-block;
+    right: 4%;
+    top: 2px;
+}
+
+.content_education .navs span,
+.content_experience .navs span{ 
+    position: relative;
+    z-index: 1;
+    background-color: #373b40;
+    display: inline-block;
+    text-align: center;
+    line-height: 53px;
+    width: 53px;
+    height: 53px;
+    border-radius: 53px;
+    border: 1px solid #585D65;
+    margin-right: 5px;
+}
+
+.content_education .navs span i,
+.content_experience .navs span i{
+    color: #fff;
+}
+
+.content_education .navs::before,
+.content_experience .navs::before{
+    content: "";
+    position: absolute;
+    width: 1000%;
+    z-index: 1;
+    left: 0;
+    top: 28px;
+    height: 1px;
+    background-color: #585D65;
+}
+
+.content_education span:hover,
+.content_experience span:hover,
+.content_education span:hover i,
+.content_experience span:hover i{
+    color: #68e0cf;
+    cursor: pointer;
+}
 
 
 
@@ -809,116 +925,6 @@ body{
 
 
 
-
-/* Experience and Education*/
-
-.content_education,
-.content_experience{
-    position: relative;
-}
-
-.content_education .slidershow,
-.content_experience .slidershow{
-    position: relative;
-    overflow: hidden;
-    margin: 9% 4% 0 4%;
-}
-
-.content_education .content_slider,
-.content_experience .content_slider{
-    display: flex;
-    justify-content: space-between;
-    transition: transform 0.5s linear;
-}
-
-.content_education .slider,
-.content_experience .slider{
-    position: relative;
-    padding-right: 8%;
-    flex: 1 0 46%;
-    /* flex-grow: 1     thuộc tính phát triển linh hoạt, làm cho các mục có mức độ phát triển là như nhau và = 1 
-    flex-shrink: 0      thuộc tính uốn cong, chỉ định mức độ mà 1 mục sẽ co lại: ở đây không cho phép thu lại
-    flex-basis: chỉ định độ dài ban đầu của 1 mục
-    
-    ==> làm cho mục linh hoạt phát triển to nhất(1), không thể thu lại(0), và có chiều rộng ban đầu là 46% */
-}
-
-.content_education .date,
-.content_experience .date{
-    position: absolute;
-    left: -20px;
-    font-size: 10px;
-    font-weight: 400;
-    top: 23px;
-    transform: rotate(90deg);
-    color: #68e0cf;
-}
-
-.content_education .content_name,
-.content_experience .content_name{
-    margin-bottom: 26px;
-    font-size: 16px;
-    font-weight: 800;
-    line-height: 26px;
-    color: #fff;
-    margin-left: 10%;
-}
-
-.content_experience .content_explain,
-.content_education .content_explain{
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 26px;
-    color: #fff; 
-}
-
-.content_experience .navs,
-.content_education .navs{
-    position: absolute;
-    display: inline-block;
-    right: 4%;
-    top: 2px;
-}
-
-.content_education .navs span,
-.content_experience .navs span{ 
-    position: relative;
-    z-index: 1;
-    background-color: #373b40;
-    display: inline-block;
-    text-align: center;
-    line-height: 53px;
-    width: 53px;
-    height: 53px;
-    border-radius: 53px;
-    border: 1px solid #585D65;
-    margin-right: 5px;
-}
-
-.content_education .navs span i,
-.content_experience .navs span i{
-    color: #fff;
-}
-
-.content_education .navs::before,
-.content_experience .navs::before{
-    content: "";
-    position: absolute;
-    width: 1000%;
-    z-index: 1;
-    left: 0;
-    top: 28px;
-    height: 1px;
-    background-color: #585D65;
-}
-
-.content_education span:hover,
-.content_experience span:hover,
-.content_education span:hover i,
-.content_experience span:hover i{
-    color: #68e0cf;
-    cursor: pointer;
-}
 
 
 

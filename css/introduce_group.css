@@ -22,7 +22,7 @@ header{
     width: 1116px;
     margin: 0 2%;
     box-shadow: 1px 1px 6px #3f3f3f;
-    background-image: url("../guest_images/background-introduce.jpg");
+    background-image: url("../images/background-introduce.jpg");
     background-size: cover;
 }
 
@@ -274,4 +274,3 @@ header{
         margin-right: var(--margin-right-new);
     }
 }
-
