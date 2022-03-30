@@ -1,4 +1,177 @@
-/* trang giới thiệu nhóm */
+
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    box-sizing: border-box;
+    font-weight: 400;
+    line-height: 26px;
+    font-size: 16px;
+}
+
+
+
+/* header */
+header{
+    display: flex;
+    justify-content: center;
+}
+
+.header{
+    width: 1116px;
+    margin: 0 2%;
+    box-shadow: 1px 1px 6px #3f3f3f;
+    background-image: url("../guest_images/background-introduce.jpg");
+    background-size: cover;
+}
+
+.header nav{
+    display: flex;
+    align-items: center;
+    padding: 1% 3%;
+    width: 94%;
+    height: 66px;
+    background-color: rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 100px #494646;
+}
+
+.navbar_menu_mobile{
+    display: none;
+}
+
+.header .menu{
+    display: flex;
+    align-items: center;
+}
+
+.header .menu .menu_item{
+    margin: 0 0 0 40px;
+}
+
+.header .menu .menu_item >a:hover
+{
+    color: #68e0cf;
+}
+
+.header .menu .menu_item a,
+.header .menu .menu_item span{
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.header .menu .menu_item ul{
+    display: none;
+    position: absolute;
+    width: 146px;
+    border: 1px solid #3f3f3f;
+    background-color: #3f3f3f;
+    box-shadow: 1px 1px 2px #525151;
+    opacity: 69%;
+}
+
+.header .menu .menu_item:hover ul{
+    display: block;
+}
+
+.header .menu .menu_item ul li{
+    font-size: 13px;
+    padding: 10px;
+    border-bottom: 1px solid #757575;
+}
+
+.header .menu .menu_item ul li:last-child{
+    border-bottom: 0;
+}
+
+.header .menu .menu_item ul li a{
+    display: block;
+}
+
+.header .menu .menu_item ul a:hover{
+    color: #68e0cf;
+}
+
+.header .menu .menu_item:first-child ul::before{
+    content: "";
+    position: absolute;
+    border: 10px solid ;
+    border-color: transparent transparent #3f3f3f transparent;
+    left: 0;
+    top: -20px;
+}
+
+.header .menu .menu_item:first-child ul::after{
+    content: "";
+    position: absolute;
+    width: 66px;
+    height: 16px;
+    background-color: transparent;
+    left: 0;
+    top: -16px;
+}
+
+.header .group_photo{
+    height: 26%;
+    margin-top: 6%;
+    text-align: center;
+}
+
+.header .group_photo img{
+    height: 100%;
+    object-fit:contain;
+    border: 2px solid #1f796d;
+    box-shadow: 6px 10px 18px #68e0cf;
+    border-radius: 100%;
+    opacity: 86%;
+}
+
+.header .groupName {
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    font-size: 30px;
+    animation: growth 1s ease-out forwards;
+    margin-top: 9%;
+}
+
+.header .icon{
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.header .icon a{
+    margin: 0 6px;
+}
+
+.header .icon a:hover i{
+    color: #fff;
+}
+
+.header .icon i{
+    font-size: 20px;
+    color: rgb(221, 221, 221);
+    animation: growth 1s ease-out forwards;
+}
+
+@keyframes growth{
+    0%{
+        opacity: 0;
+        transform: scale(0.6);
+    }
+    100%{
+        opacity: 100%;
+        transform: scale(1);
+    }
+}
+
+
+
+/* main */
+
 .container_introduce,
 .container_contact,
 .container_footer {
@@ -67,7 +240,6 @@
     --margin-left-old : 90px;
     --margin-left-new : 0;
     animation: change_margin_left 2s;
-
 }
 
 .container_introduce .content #may .basic_information{
@@ -102,3 +274,4 @@
         margin-right: var(--margin-right-new);
     }
 }
+
