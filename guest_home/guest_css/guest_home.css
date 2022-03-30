@@ -154,25 +154,25 @@ body{
 
 
 /* Services */
-.content_services .content_text>div{
+.content_hobby .content_text>div{
     display: flex;
 }
 
-.content_services .content_element{
+.content_hobby .content_element{
     width: 92%;
     margin: 7% 4% 0 4%;
 }
 
-.content_services .content_services_icon{
+.content_hobby .content_hobby_icon{
     margin-bottom: 15px;
 }
 
-.content_services .content_services_icon i{
+.content_hobby .content_hobby_icon i{
     color: #68e0cf;
     font-size: 32px;
 }
 
-.content_services .content_name{
+.content_hobby .content_name{
     margin-bottom: 26px;
     font-size: 16px;
     font-weight: 800;
@@ -180,7 +180,7 @@ body{
     color: #fff;
 }
 
-.content_services .content_explain{
+.content_hobby .content_explain{
     font-size: 13px;
     font-weight: 400;
     line-height: 26px;
