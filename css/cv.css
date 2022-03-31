@@ -63,7 +63,6 @@ body{
     opacity: 60%;
     --height_old: 10%;
     --height_new: 0;
-    animation-direction: alternate;
     animation: change_height 0.6s ease-in 0.09s forwards;
 }
 
@@ -76,7 +75,6 @@ body{
     opacity: 60%;
     --height_old: 10%;
     --height_new: 0;
-    animation-direction: alternate;
     animation: change_height 0.9s ease-in 0.15s forwards;
 }
 
@@ -927,8 +925,6 @@ body{
 
 
 
-
-
 /* Portfolio */
 .content_Portfolio .portfolio_menu{
     display: flex;
@@ -1034,9 +1030,6 @@ body{
 .img_full{
     height: 60%;
 }
-
-
-
 
 
 
@@ -1190,4 +1183,30 @@ body{
     height: 100%;
     width: 91px;
     border-left: 1px solid #585D65;
+}
+
+.footer_content{
+    position: absolute;
+    right: calc(45.5px - 27px);
+    width: 54px;
+    height: 207px;
+    bottom: 40px;
+}
+
+.footer_icon{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    width: 54px;
+    height: 54px;
+    line-height: 54px;
+    font-size: 16px;
+    margin: 0 0 15px 0;
+    border: 1px solid #585D65;
+    border-radius: 54px;
+    text-align: center;
+}
+
+.footer_icon:hover i {
+    color: #68e0cf;
 }
