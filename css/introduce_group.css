@@ -1,0 +1,145 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* contact */
+.container_contact .content>div{
+    display: flex;
+}
+
+.container_contact .information{
+    width: 40%;
+    margin-right: 20px;
+    --margin-left-old: 90px;
+    --margin-left-new: 0;
+    animation: change_margin_left 2s ease-out;
+}
+
+.container_contact .communications{
+    display: flex;
+    flex-direction: column;
+}
+
+.container_contact .communications a{
+    text-decoration: none;
+    color: #575757;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.container_contact .communications a i{
+    margin-right: 10px;
+    color: #929292;
+}
+
+.container_contact .communications a:hover i{
+    font-size: 19px;
+    color: #1f796d;
+}
+
+.container_contact form{
+    margin-top: 9%;
+}
+
+.container_contact .form_element{
+    margin-bottom: 20px;
+}
+
+.container_contact form input,
+.container_contact form textarea,
+.container_contact form button{
+    display: block;
+    font-size: 14px;
+    width: 96%;
+    padding: 2%;
+    border-radius: 3px;
+    border: 1px solid #acabab;
+    outline-color: #53b3a6;
+}
+
+.container_contact .invalid_error{
+    color: red;
+    font-size: 11px;
+    font-weight: 400;
+}
+
+.container_contact form button{
+    margin-bottom: 0;
+    width: 100%;
+    margin: 0 auto;
+    font-weight: 600;
+    color: #575757;
+    background-color: #68e0cf;
+    border: 0;
+    box-shadow: 1px 1px 4px #acabab;
+    cursor: pointer;
+}
+
+.container_contact form button:hover{
+    box-shadow: 1px 1px 7px #acabab;
+}
+
+.container_contact .content .map{
+    width: 60%;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_contact .content .map iframe{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    animation: growth 1s ease-out;
+}
+
+
+/* footer */
+
+.container_footer .content{
+    padding-top: 0;
+    text-align: center;
+    color: #757575;
+    font-size: 14px;
+    box-shadow: none;
+}
+
+.container_footer .content .groupName{
+    margin: 20px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.container_footer .icon{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.container_footer .icon div{
+    margin: 0 5px;
+}
+
+.container_footer .icon div a{
+    color: #757575;
+    font-size: 16px;
+}
+
+.container_footer .content span{
+    border-bottom: 1px dashed #757575;
+}
+

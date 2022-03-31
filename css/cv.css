@@ -1,6 +1,12 @@
 
 /* CSS full container*/
 
+html{
+    /* hiệu ứng cuộn chuột mượt */
+    scroll-behavior: smooth;        
+}
+
+
 body{
     font-family: 'Poppins', sans-serif;
     background-color: #373b40;
@@ -57,7 +63,6 @@ body{
     opacity: 60%;
     --height_old: 10%;
     --height_new: 0;
-    animation-direction: alternate;
     animation: change_height 0.6s ease-in 0.09s forwards;
 }
 
@@ -70,7 +75,6 @@ body{
     opacity: 60%;
     --height_old: 10%;
     --height_new: 0;
-    animation-direction: alternate;
     animation: change_height 0.9s ease-in 0.15s forwards;
 }
 
@@ -161,7 +165,7 @@ body{
 }
 
 /* home */
-.navbar_item:nth-child(1) ul{
+.navbar_item:nth-child(2) ul{
     display: none;
     background-color: #585d65;
     position: absolute;
@@ -210,9 +214,8 @@ body{
     content: "";
     position: absolute;
     display: block;
-    width: 50px;
+    width: 80px;
     height: 15px;
-    right: 130px;
     top: -16px;
 }
 
@@ -445,37 +448,7 @@ body{
 
 
 
-
-/* Services */
-
-
-
-
-
-
-/* Experience and Education*/
-
-
-
-
-
-/* Design Skills */
-
-
-
-
-
-
-
-/* Language Skills */
-
-
-
-
-
-/* Coding Skills */
-
-
+/* hobby */
 
 
 
@@ -588,6 +561,29 @@ body{
     color: #68e0cf;
     cursor: pointer;
 }
+
+
+
+
+
+/* Design Skills */
+
+
+
+
+
+
+
+
+/* Language Skills */
+
+
+
+
+/* Coding Skills */
+
+
+
 
 
 
@@ -853,4 +849,30 @@ body{
     height: 100%;
     width: 91px;
     border-left: 1px solid #585D65;
+}
+
+.footer_content{
+    position: absolute;
+    right: calc(45.5px - 27px);
+    width: 54px;
+    height: 207px;
+    bottom: 40px;
+}
+
+.footer_icon{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    width: 54px;
+    height: 54px;
+    line-height: 54px;
+    font-size: 16px;
+    margin: 0 0 15px 0;
+    border: 1px solid #585D65;
+    border-radius: 54px;
+    text-align: center;
+}
+
+.footer_icon:hover i {
+    color: #68e0cf;
 }
