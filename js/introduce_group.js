@@ -1,10 +1,10 @@
 
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ navbar (responsive)
-var mobile_link_bars = document.querySelector(".mobile_link_bars")
-var mobile_link_xmark = document.querySelector(".mobile_link_xmark")
 var menu = document.querySelector(".menu")
 var menu_item = document.querySelectorAll(".menu_item")
+var mobile_link_bars = document.querySelector(".mobile_link_bars")
+var mobile_link_xmark = document.querySelector(".mobile_link_xmark")
 
 //sự kiện khi click vào nút bars thì hiển thị menu
 mobile_link_bars.addEventListener("click", function () {

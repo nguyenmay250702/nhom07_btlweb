@@ -1,13 +1,40 @@
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ NAVBAR
 
+var navbar_list = document.querySelector(".navbar_list")
+var navbar_item_link = document.querySelectorAll(".navbar_item_link")
+var mobile_link_bars = document.querySelector(".mobile_link_bars")
+var mobile_link_xmark = document.querySelector(".mobile_link_xmark")
+
+
+// sự kiện click vào nút bars hiện ra navbar
+mobile_link_bars.addEventListener("click",function(){
+    navbar_list.style.height = "100%"
+    mobile_link_bars.style.display = "none"
+    mobile_link_xmark.style.display = "block"
+})
+
+// sự kiện click vào nút xmark hiện ra navbar
+mobile_link_xmark.addEventListener("click",function(){
+    navbar_list.style.height = "0"
+    mobile_link_bars.style.display = "block"
+    mobile_link_xmark.style.display = "none"
+})
+
+// sự kiện click vào các mục trong menu hiển thị nội dung của từng phần
+for(let i=1; i<navbar_item_link.length; i++){
+    navbar_item_link[i].addEventListener("click",function(){
+        navbar_list.style.height = "0"
+        mobile_link_xmark.style.display = "none"
+        mobile_link_bars.style.display = "block"
+    })
+}
 
 
 
 
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ slider
-
 
 function move_content_slider(next, back, content_slider, number_sliders, index, spaceX_dt, spaceX_mt) {
 
