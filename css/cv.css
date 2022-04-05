@@ -267,14 +267,14 @@ body{
     top: 0;
     width: 45%;
     height: 100%;
-    background-color: #68e0cf;
+    background-color: #c7decf;
 }
 
 .wrapper_background img{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    mix-blend-mode: luminosity;         /*đặt chế độ hòa trộn thành độ sáng*/
+    mix-blend-mode: multiply;         /*đặt chế độ hòa trộn thành độ sáng*/
 }
 
 
