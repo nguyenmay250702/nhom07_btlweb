@@ -729,7 +729,7 @@ body{
 
 .content_DesignSkills .progress_55 .percentage{
     --width_old: 6%;
-    --width_new: 65%;
+    --width_new: 55%;
     animation: DesignSkills_change_width 3s ease-in 5 forwards;
 }
 
@@ -1167,7 +1167,6 @@ body{
     font-size: 32px;
     color: #fff;
 }
-
 
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ footer ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
