@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>user_management</title>
+    
+        <!-- favicon -->
+        <link rel="icon" href="../admin_images/favicon.ico">
+    
+        <!-- reset-->
+        <link rel="stylesheet" href="../admin_css/reset.css">
+    
+        <!-- font chữ -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap" rel="stylesheet">
+    
+        <!-- fontawesome-icon -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+            integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+        <!--  CSS ND-->
+        <link rel="stylesheet" href="../admin_css/admin_navbar.css">
+        <link rel="stylesheet" href="../admin_css/user_management.css">
+    </head>
+<body>
+    <header>
+        <div class="admin_information">
+            <div class="avata">
+                <img src="../admin_images/admin_avatar.png" alt="">
+            </div>
+            <div class="usename">admin</div>
+        </div>
+        <ul class="navbar">
+            <li class="navbar_item">
+                <a href="../admin_home.html"><i class="fa-solid fa-house"></i> Home</a>
+            </li>
+            <li class="navbar_item">
+                <a href="user_management.html">Account_management</a>
+            </li>
+            <li class="navbar_item">
+                <a href="cv_management.html">CV_manager</a>
+            </li>
+            <li class="navbar_item">
+                <a href="../admin_login.html">Logout</a>
+            </li>
+        </ul>
+
+        <div class="navbar_menu_mobile">
+            <a href="#" class="mobile_link_bars"><i class="fa-solid fa-bars"></i></a>
+            <a href="#" class="mobile_link_xmark"><i class="fa-solid fa-xmark"></i></a>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="wrapper">
+                <div class="content_1">
+                    <h1 class="management_item">User Management</h1>
+                    <h1>Data entry form</h1>
+                    <div class="reset">
+                        <div title="Delete data in form"><i class="fa-solid fa-broom"></i> reset</div>
+                    </div>
+                    <form action="">
+                        <div>
+                            <span>Username: </span>
+                            <input type="text" class="username" placeholder="username">
+                        </div>
+                        <div>
+                            <span>Password: </span>
+                            <input type="password" class="password" placeholder="password">
+                        </div>
+
+                        <div class="notification"></div>
+                    </form>
+                    <div class="function_bar">
+                        <div class="add" title="Add new account">Add</div>
+                        <div class="read" title="Show all existing accounts">Read</div>
+                        <div class="update" title="Update data again">Update</div>
+                        <div class="delete_all" title="Delete all existing accounts">Delete all</div>
+                    </div>
+                </div>
+    
+                <div class="content_2">
+                    <h1><i class="fa-regular fa-rectangle-list"></i> User Management List</h1>
+                    <table>
+                        <tr>
+                            <td>#</td>
+                            <td class="user" colspan="2">Username</td>
+                            <td class="pass" colspan="2">Password</td>
+                            <td class="edit">Edit</td>
+                            <td class="delete">Delete</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td class="user" colspan="2">admin</td>
+                            <td class="pass" colspan="2">admin</td>
+                            <td class="edit"><i class="fa-regular fa-pen-to-square"></i></td>
+                            <td class="delete"><i class="fa-regular fa-trash-can"></i></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td class="user" colspan="2">62th1</td>
+                            <td class="pass" colspan="2">th1</td>
+                            <td class="edit"><i class="fa-regular fa-pen-to-square"></i></td>
+                            <td class="delete"><i class="fa-regular fa-trash-can"></i></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="../admin_js/user_management .js"></script>
+    <script src="../admin_js/admin_navbar.js"></script>
+
+</body>
+</html>

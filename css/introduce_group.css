@@ -25,7 +25,7 @@ header{
     width: 1116px;
     margin: 0 2%;
     box-shadow: 1px 1px 6px #3f3f3f;
-    background-image: url("../images/background-introduce.jpg");
+    background-image: url("../images/introduce_background.jpg");
     background-size: cover;
 }
 
@@ -64,6 +64,14 @@ header{
     text-decoration: none;
     font-weight: 600;
 }
+
+.header .menu .login a{
+    color: yellowgreen;
+    padding: 3px;
+    border: 1px solid gray;
+    border-radius: 6px;
+}
+
 
 .header .menu .menu_item ul{
     display: none;

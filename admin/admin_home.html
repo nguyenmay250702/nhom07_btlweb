@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>admin_index</title>
+
+    <!-- favicon -->
+    <link rel="icon" href="../images/favicon.ico">
+
+    <!-- reset-->
+    <link rel="stylesheet" href="../css/reset.css">
+
+    <!-- font chữ -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap" rel="stylesheet">
+
+    <!-- fontawesome-icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--  CSS ND-->
+    <link rel="stylesheet" href="./admin_css/admin_navbar.css">
+    <link rel="stylesheet" href="./admin_css/admin_home.css">
+</head>
+
+<body>
+    <header>
+        <div class="admin_information">
+            <div class="avata">
+                <img src="./admin_images/admin_avatar.png" alt="">
+            </div>
+            <div class="usename">admin</div>
+        </div>
+        <ul class="navbar">
+            <li class="navbar_item">
+                <a href="admin_home.html"><i class="fa-solid fa-house"></i> Home</a>
+            </li>
+            <li class="navbar_item">
+                <a href="./admin_pages/user_management.html">Account_management</a>
+            </li>
+            <li class="navbar_item">
+                <a href="#">CV_manager</a>
+            </li>
+            <li class="navbar_item">
+                <a href="admin_login.html">Logout</a>
+            </li>
+        </ul>
+
+        <div class="navbar_menu_mobile">
+            <a href="#" class="mobile_link_bars"><i class="fa-solid fa-bars"></i></a>
+            <a href="#" class="mobile_link_xmark"><i class="fa-solid fa-xmark"></i></a>
+        </div>
+    </header>
+    <main>
+        <div class="background"></div>
+        <div class="content">
+            <div class="introduce_group"><a href="../introduce_group.html" target="_blank" >Introduce_group</a></div>
+            <div class="management">
+                <div class="acount_management">
+                    <a href="./admin_pages/user_management.html">Account management</a>
+                </div>
+                <div class="cv_manager">
+                    <a href="#">CV manager</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./admin_js/admin_navbar.js"></script>
+</body>
+
+</html>

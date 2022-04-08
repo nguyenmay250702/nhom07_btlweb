@@ -1,0 +1,173 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ header~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    font-size: 14px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 6%;
+}
+
+.wrapper{
+    width: 900px;
+    margin: 3% 3% 0 3%;
+    line-height: 26px;
+}
+
+.content_1 h1,
+.content_2 h1{
+    text-align: center;
+    font-size: 23px;
+    font-weight: 600;
+    line-height: 30px;
+    margin-bottom: 4%;
+}
+
+.content_1 .management_item{
+    color: #26887b;
+    margin-bottom: 2%;
+}
+
+
+.content_1 .reset{
+    text-align: end;
+}
+
+.content_1 .reset>div{
+    display: inline-block;
+    color: rgb(75, 141, 196);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.content_1 .reset>div:hover{
+    cursor: pointer;
+    color: rgb(32, 86, 131);
+}
+
+.content_1 form{
+    background-color: rgba(0,0,0,0.2);
+    border: 1px solid rgb(120, 116, 116);
+    box-shadow: 2px 2px 16px rgb(136, 134, 134);
+    padding: 2%;
+    margin-bottom: 6%;
+}
+
+.content_1 form div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content_1 form div{
+    margin-bottom: 3%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content_1 form div span{
+    display: inline-block;
+    color: #26887b;
+    font-weight: 600;
+    width: 156px;
+}
+
+.content_1 form div input{
+    width: 100%;
+    padding: 5px 10px;
+    margin-left: 3%;
+    border: 1px solid gray;
+    outline-color: yellowgreen;
+}
+
+.content_1 form .notification{
+    font-size: 13px;
+    margin-bottom: 0;
+    justify-content: flex-start;
+}
+
+.content_1 .notification i{
+    font-size: 19px;
+    margin-right: 6px;
+}
+
+.content_1 .function_bar{
+    display: flex;
+    justify-content: center;
+}
+
+.content_1 .function_bar div{
+    margin: 0 2%;
+    padding: 0 1%;
+    border: 1px solid rgb(130, 128, 128);
+    border-radius: 5px;
+}
+
+.content_1 .function_bar div:hover{
+    cursor: pointer;
+    box-shadow: 1px 1px 6px rgb(59, 59, 59);
+}
+
+.content_1 .function_bar .add{
+    background-color: green;
+}
+
+.content_1 .function_bar .read{
+    background-color: navy;
+}
+
+.content_1 .function_bar .update{
+    background-color: rgb(212, 132, 46);
+}
+
+.content_1 .function_bar .delete_all{
+    background-color: rgb(217, 22, 22);
+}
+
+
+/* table */
+.content_2{
+    margin-top: 11%;
+}
+
+.content_2 table{
+    width: 100%;
+    line-height: 38px;
+    border: 1px solid rgb(168, 166, 166);
+    box-shadow: 2px 2px 16px rgb(136, 134, 134);
+}
+
+tr, td{
+    border: 1px solid rgb(168, 166, 166);
+    text-align: center;
+    color: black;
+}
+
+tr{
+    display: none;
+}
+
+tr:first-child{
+    display: table-row;
+}
+
+.content_2 tr:first-child{
+    background-color: rgba(0,0,0,0.4);
+    font-weight: 800;
+}
+
+.delete:hover, 
+.edit:hover{
+    cursor: pointer;
+    color: #26887b;
+}
+
+tr:first-child .delete:hover,
+tr:first-child .edit:hover{
+    cursor: default;
+    color: black;
+}

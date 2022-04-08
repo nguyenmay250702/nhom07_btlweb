@@ -698,10 +698,10 @@ body{
     color: #fff; 
 }
 
-.content_DesignSkills .progress_90,
-.content_DesignSkills .progress_70,
+.content_DesignSkills .progress_30,
+.content_DesignSkills .progress_40,
 .content_DesignSkills .progress_55,
-.content_DesignSkills .progress_86{
+.content_DesignSkills .progress_35{
     position: relative;
     height: 2px;
     width: 100%;
@@ -715,28 +715,28 @@ body{
     background-color: #68e0cf;
 }
 
-.content_DesignSkills .progress_90 .percentage{
+.content_DesignSkills .progress_30 .percentage{
     --width_old: 6%;
-    --width_new: 90%;
-    animation: DesignSkills_change_width 3s ease-in 5 forwards;
+    --width_new: 30%;
+    animation: DesignSkills_change_width 3s ease-in 2 forwards;
 }
 
-.content_DesignSkills .progress_70 .percentage{
+.content_DesignSkills .progress_40 .percentage{
     --width_old: 6%;
-    --width_new: 70%;
-    animation: DesignSkills_change_width 3s ease-in 5 forwards;
+    --width_new: 40%;
+    animation: DesignSkills_change_width 3s ease-in 2 forwards;
 }
 
 .content_DesignSkills .progress_55 .percentage{
     --width_old: 6%;
     --width_new: 55%;
-    animation: DesignSkills_change_width 3s ease-in 5 forwards;
+    animation: DesignSkills_change_width 3s ease-in 2 forwards;
 }
 
-.content_DesignSkills .progress_86 .percentage{
+.content_DesignSkills .progress_35 .percentage{
     --width_old: 6%;
-    --width_new: 86%;
-    animation: DesignSkills_change_width 3s ease-in 5 forwards;
+    --width_new: 35%;
+    animation: DesignSkills_change_width 3s ease-in 2 forwards;
 }
 
 .content_DesignSkills .percentage span{
@@ -896,25 +896,25 @@ body{
 
 .content_CodingSkills .content_element:nth-child(1) .percentage{
     --width_old: 6%;
-    --width_new: 60%;
+    --width_new: 10%;
     animation: codingSkills_change_width 3s ease-out forwards;
 }
 
 .content_CodingSkills .content_element:nth-child(2) .percentage{
     --width_old: 6%;
-    --width_new: 70%;
+    --width_new: 45%;
     animation: codingSkills_change_width 3s ease-out forwards;
 }
 
 .content_CodingSkills .content_element:nth-child(3) .percentage{
     --width_old: 6%;
-    --width_new: 86%;
+    --width_new: 66%;
     animation: codingSkills_change_width 3s ease-out forwards;
 }
 
 .content_CodingSkills .content_element:nth-child(4) .percentage{
     --width_old: 6%;
-    --width_new: 90%;
+    --width_new: 40%;
     animation: codingSkills_change_width 3s ease-out forwards;
 }
 
