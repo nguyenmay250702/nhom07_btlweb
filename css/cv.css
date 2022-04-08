@@ -871,7 +871,6 @@ body{
 .content_CodingSkills .content_element{
     width: 92%;
     margin: 7% 4% 0 4%;
-    flex-direction: column;
 }
 
 .content_CodingSkills .content_name{
