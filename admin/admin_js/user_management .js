@@ -99,8 +99,31 @@ setInterval(function(){
 
 update.addEventListener("click", function(){
     let j = temp
-    user[j].textContent = username.value
-    pass[j].textContent = password.value
+    if (username.value.trim() == "" || password.value.trim() == "") {
+        if (username.value.trim() == "") {
+            username.style.backgroundColor = "#ff000042"
+        }
+        else {
+            username.style.backgroundColor = "#fff"
+        }
+
+        if (password.value.trim() == "") {
+            password.style.backgroundColor = "#ff000042"
+        }
+        else {
+            password.style.backgroundColor = "#fff"
+        }
+
+        notification.innerHTML = "<i class='fa-solid fa-circle-exclamation'></i> Invalid username or password, please check the information again."
+        notification.style.color = "red"
+    }
+    else {
+        user[j].textContent = username.value
+        pass[j].textContent = password.value
+        username.style.backgroundColor = "#fff"
+        password.style.backgroundColor = "#fff"
+        notification.innerHTML = ""
+    }
 })
 
 
@@ -112,8 +135,6 @@ setInterval(function () {
     for (let i = 1; i < tr.length; i++) {
         tr[i].querySelector("td:first-child").textContent = i
         deletes[i].addEventListener("click", function(){
-            // let table = document.querySelector("table tbody")
-            // table.removeChild(tr[i])
             tr[i].remove()
         })
     }
