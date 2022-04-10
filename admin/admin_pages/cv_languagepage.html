@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>cv_language</title>
+    
+        <!-- favicon -->
+        <link rel="icon" href="../../images/favicon.ico">
+    
+        <!-- reset-->
+        <link rel="stylesheet" href="../../css/reset.css">
+    
+        <!-- font chữ -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap" rel="stylesheet">
+    
+        <!-- fontawesome-icon -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+            integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+        <!--  CSS ND-->
+        <link rel="stylesheet" href="../admin_css/admin_navbar.css">
+        <link rel="stylesheet" href="../admin_css/user_management.css">
+        <link rel="stylesheet" href="../admin_css/cv_subpages.css">
+    </head>
+
+<body>
+    <header>
+        <div class="admin_information">
+            <div class="avata">
+                <img src="../admin_images/admin_avatar.png" alt="">
+            </div>
+            <div class="usename">admin</div>
+        </div>
+        <ul class="navbar">
+            <li class="navbar_item">
+                <a href="../admin_home.html"><i class="fa-solid fa-house"></i> Home</a>
+            </li>
+            <li class="navbar_item">
+                <a href="./cv_manager.html">Account_management</a>
+            </li>
+            <li class="navbar_item">
+                <a href="cv_management.html" style="color: #68e0cf;" >CV_manager</a>
+            </li>
+            <li class="navbar_item">
+                <a href="../../introduce_group.html" target="_blank" >Introduce_group</a>
+            </li>
+            <li class="navbar_item">
+                <a href="../admin_login.html">Logout</a>
+            </li>
+        </ul>
+
+        <div class="navbar_menu_mobile">
+            <a href="#" class="mobile_link_bars"><i class="fa-solid fa-bars"></i></a>
+            <a href="#" class="mobile_link_xmark"><i class="fa-solid fa-xmark"></i></a>
+        </div>
+    </header>
+
+    <main class="cv_subpage_content">
+        <div class="menu">
+            <div class="control">
+                <i class="fa-solid fa-plus"></i>
+                <i class="fa-solid fa-minus"></i>
+            </div>
+            <ul>
+                <li> Category </li>
+                <li> <a href="cv_hoppypage.html">Hoppy</a> </li>
+                <li> <a href="cv_designpage.html">Design Skills</a> </li>
+                <li> <a href="cv_languagepage.html" style="color: #68e0cf;" >Language Skills</a> </li>
+            </ul>
+        </div>
+
+        <div class="container">
+            <div class="wrapper">
+                <div class="content_1">
+                    <h1 class="management_item">Language Skills</h1>
+                    <h1>Data entry form</h1>
+                    <div class="reset">
+                        <div title="Delete data in form"><i class="fa-solid fa-broom"></i> reset</div>
+                    </div>
+                    <form action="">
+                        <div>
+                            <span>My Language: </span>
+                            <input type="text" placeholder="music, sports, ...">
+                        </div>
+                        <div>
+                            <span>Description: </span>
+                            <textarea type="text" placeholder="description" rows="4"></textarea>
+                        </div>
+
+                        <div class="notification"></div>
+                    </form>
+                    <div class="function_bar">
+                        <div class="add" title="Add new account">Add</div>
+                        <div class="read" title="Show all existing accounts">Read</div>
+                        <div class="update" title="Update data again">Update</div>
+                        <div class="delete_all" title="Delete all existing accounts">Delete all</div>
+                    </div>
+                </div>
+    
+                <div class="content_2">
+                    <h1><i class="fa-regular fa-rectangle-list"></i> Item data Language</h1>
+                    <table>
+                        <tr>
+                            <td>#</td>
+                            <td class="title_name">My Language</td>
+                            <td class="Description">Description</td>
+                            <td class="edit">Edit</td>
+                            <td class="delete">Delete</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td class="title_name">English</td>
+                            <td class="Description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+                            <td class="edit"><i class="fa-regular fa-pen-to-square"></i></td>
+                            <td class="delete"><i class="fa-regular fa-trash-can"></i></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td class="title_name">French</td>
+                            <td class="Description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+                            <td class="edit"><i class="fa-regular fa-pen-to-square"></i></td>
+                            <td class="delete"><i class="fa-regular fa-trash-can"></i></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script src="../admin_js/cv_subpages.js"></script>
+    <script src="../admin_js/admin_navbar.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ main */
+
+
+/* menu */
+.cv_subpage_content .menu{
+    position: fixed;
+    top: 160px;
+    width: 160px;
+
+}
+
+.cv_subpage_content .menu .control{
+    display: inline-block;
+    padding: 3px;
+    border: 1px solid darkblue;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 100%;
+}
+
+.cv_subpage_content .menu .control:hover{
+    cursor: pointer;
+    background-color: #9bbb72;
+}
+
+.cv_subpage_content .menu .control i{
+    font-size: 26px;
+    color: darkblue;
+}
+
+.cv_subpage_content .menu .control i:first-child{
+    display: none;
+}
+
+.cv_subpage_content .menu >ul{
+    padding: 1%;
+    background-color: rgba(0, 0, 0, 0.3);
+    line-height: 33px;
+    text-align: center;
+    border: 1px solid black;
+    box-shadow: 1px 2px 10px rgb(46 89 124);
+    border-radius: 6px;
+    transition: 0.6s;
+    transform-origin: 10% top; /*thay đổi vị trí của các phần tử biến đổi, nở ra từ góc trên, cách bên trái 10%*/
+}
+
+.cv_subpage_content .menu li:first-child{
+    font-weight: 600;
+    font-size: 17px;
+    border-bottom: 1px solid black;
+    color: yellowgreen;
+    margin-bottom: 10px;
+}
+
+.cv_subpage_content .menu li:hover a{
+    color: #26887b;
+}
+
+
+
+/* content_1 */
+
+.cv_subpage_content .container .content_1 input, 
+.cv_subpage_content .container .content_1 textarea{
+    margin: 0;
+    width: 100%;
+    padding: 5px 10px;
+    border: 1px solid gray;
+    outline-color: yellowgreen;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
